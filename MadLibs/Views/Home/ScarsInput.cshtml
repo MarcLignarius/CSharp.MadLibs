@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>MadLibs</title>
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <h1>Please fill in the blanks:</h1>
+<head>
+  <meta charset='utf-8'>
+  <title>MadLibs</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' runat="server" href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Scars</h1>
+    <em>Please fill in the blanks to create a story</em>
+  </div>
+  <div class="container">
     <form action="/scarsoutput" method="post">
-     <label for="thing">An object</label>
-     <input id="thing" name="thing" type="text">
-     <br>
-     <label for="occupation">An occupation</label>
-     <input id="occupation" name="occupation" type="text">
-     <br>
-     <label for="verb">A present tense verb</label>
-     <input id="verb" name="verb" type="text">
-     <br>
-     <label for="question">An interrogative word</label>
-     <input id="question" name="question" type="text">
-     <br>
-     <label for="adjective">An adjective</label>
-     <input id="adjective" name="adjective" type="text">
-     <br>
-     <button type="submit" class="btn btn-dark">Go!</button>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="thing">An object</label>
+            <input class="form-control" id="thing" name="thing" type="text">
+          </div>
+          <div class="form-group">
+            <label for="thing">Another object</label>
+            <input class="form-control" id="thing" name="thing" type="text">
+          </div>
+          <div class="form-group">
+            <label for="occupation">An occupation</label>
+            <input class="form-control" id="occupation" name="occupation" type="text">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="verb">A present tense verb</label>
+            <input class="form-control" id="verb" name="verb" type="text">
+          </div>
+          <div class="form-group">
+            <label for="question">An interrogative word</label>
+            <input class="form-control" id="question" name="question" type="text">
+          </div>
+          <div class="form-group">
+            <label for="adjective">An adjective</label>
+            <input class="form-control" id="adjective" name="adjective" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-dark">Go!</button>
+      </div>
     </form>
-  </body>
+  </div>
+</body>
 </html>
