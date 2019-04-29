@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>MadLibs</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' runat="server" href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Fury</h1>
+    <em>Please fill in the blanks to create a story</em>
+  </div>
+  <div class="container">
+    <form action="/game2output" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="noun1">A noun</label>
+            <input class="form-control" id="noun1" name="noun1" type="text">
+          </div>
+          <div class="form-group">
+            <label for="noun2">Another noun</label>
+            <input class="form-control" id="noun2" name="noun2" type="text">
+          </div>
+          <div class="form-group">
+            <label for="adjective">An adjective</label>
+            <input class="form-control" id="adjective" name="adjective" type="text">
+          </div>
+          <div class="form-group">
+            <label for="noun3">Another noun</label>
+            <input class="form-control" id="noun3" name="noun3" type="text">
+          </div>
+          <div class="form-group">
+            <label for="verb1">A verb</label>
+            <input class="form-control" id="verb1" name="verb1" type="text">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="noun4">Another noun</label>
+            <input class="form-control" id="noun4" name="noun4" type="text">
+          </div>
+          <div class="form-group">
+            <label for="verb2">Another verb</label>
+            <input class="form-control" id="verb2" name="verb2" type="text">
+          </div>
+          <div class="form-group">
+            <label for="verb3">Another verb</label>
+            <input class="form-control" id="verb3" name="verb3" type="text">
+          </div>
+          <div class="form-group">
+            <label for="noun5">Another noun</label>
+            <input class="form-control" id="noun5" name="noun5" type="text">
+          </div>
+          <div class="form-group">
+            <label for="name">A name</label>
+            <input class="form-control" id="name" name="name" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark">Go!</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

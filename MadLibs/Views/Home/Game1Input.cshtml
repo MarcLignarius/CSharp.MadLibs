@@ -12,16 +12,16 @@
     <em>Please fill in the blanks to create a story</em>
   </div>
   <div class="container">
-    <form action="/scarsoutput" method="post">
+    <form action="/game1output" method="post">
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
             <label for="thing">An object</label>
-            <input class="form-control" id="thing" name="thing" type="text">
+            <input class="form-control" id="thing1" name="thing" type="text">
           </div>
           <div class="form-group">
             <label for="thing">Another object</label>
-            <input class="form-control" id="thing" name="thing" type="text">
+            <input class="form-control" id="thing2" name="thing" type="text">
           </div>
           <div class="form-group">
             <label for="occupation">An occupation</label>
@@ -43,8 +43,12 @@
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-dark">Go!</button>
+      <div class="row">
+        <div class="col-md-1">
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark">Go!</button>
+          </div>
+        </div>
       </div>
     </form>
   </div>
