@@ -1,28 +1,25 @@
+using System.Collections.Generic;
 namespace MadLibs.Models
 {
   public class Words
   {
-    private string _recipient;
-    private string _sender;
+    private Dictionary<string, string> _wordList = new Dictionary<string, string>();
 
-    public string GetRecipient()
+    public string GetWord(string key)
     {
-      return _recipient;
+      if (_wordList.ContainsKey(key))
+      {
+        return _wordList[key];
+      }
+      else
+      {
+        return "Water Dog";
+      }
     }
 
-    public void SetRecipient(string newRecipient)
+    public void AddWord(string key, string word)
     {
-      _recipient = newRecipient;
-    }
-
-    public string GetSender()
-    {
-      return _sender;
-    }
-
-    public void SetSender(string newSender)
-    {
-      _sender = newSender;
+      _wordList.Add(key, word);
     }
 
   }

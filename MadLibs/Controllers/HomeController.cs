@@ -7,14 +7,18 @@ namespace MadLibs.Controllers
   {
 
     [Route("/input")]
-    public ActionResult Input() { return View(); }
+    public ActionResult ScarsInput() { return View(); }
 
-    [Route("/output")]
-    public ActionResult Output(string recipient, string sender)
+    [Route("/scars")]
+    public ActionResult ScarsOutput(string thing, string occupation, string verb, string question, string adjective)
     {
       Words myWords = new Words();
-      myWords.SetRecipient(recipient);
-      myWords.SetSender(sender);
+      myWords.AddWord("thing", thing);
+      myWords.AddWord("occupation", occupation);
+      myWords.AddWord("verb", verb);
+      myWords.AddWord("question", question);
+      myWords.AddWord("adjective", adjective);
+
       return View(myWords);
     }
 
