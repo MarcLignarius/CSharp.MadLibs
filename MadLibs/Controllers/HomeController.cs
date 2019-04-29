@@ -6,10 +6,10 @@ namespace MadLibs.Controllers
   public class HomeController : Controller
   {
 
-    [Route("/input")]
+    [Route("/scarsinput")]
     public ActionResult ScarsInput() { return View(); }
 
-    [Route("/scars")]
+    [Route("/scarsoutput")]
     public ActionResult ScarsOutput(string thing, string occupation, string verb, string question, string adjective)
     {
       Words myWords = new Words();
