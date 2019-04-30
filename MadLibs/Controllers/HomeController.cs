@@ -7,7 +7,7 @@ namespace MadLibs.Controllers
   {
 
     [Route("/")]
-    public ActionResult index() { return View(); }
+    public ActionResult Index() { return View(); }
 
     [Route("/game1input")]
     public ActionResult Game1Input() { return View(); }
@@ -16,11 +16,11 @@ namespace MadLibs.Controllers
     public ActionResult Game2Input() { return View(); }
 
     [Route("/game1output")]
-    public ActionResult Game1Output(string thing1, string thing2, string occupation, string verb, string question, string adjective)
+    public ActionResult Game1Output(string noun1, string noun2, string occupation, string verb, string question, string adjective)
     {
       Words myWords = new Words();
-      myWords.AddWord("thing1", thing1);
-      myWords.AddWord("thing2", thing2);
+      myWords.AddWord("noun1", noun1);
+      myWords.AddWord("noun2", noun2);
       myWords.AddWord("occupation", occupation);
       myWords.AddWord("verb", verb);
       myWords.AddWord("question", question);

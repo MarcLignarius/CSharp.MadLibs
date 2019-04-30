@@ -1,46 +1,26 @@
-# _MVC Web Application Template_
+# _MadLibs_
 
-#### _Structure and files to build an Epicodus C# Week 2 Project, last updated 04/29/2019_
+#### _Program which takes user inputs and inserts them into a preset sentence, 04/29/2019_
 
-#### By _**Marc Davies**_
+#### By _**Marc Davies and Todd Aden**_
 
 ## Description
 
-_Structure and files to build an Epicodus C# Week 2 Project:_
-
-* _A main directory called MVCWebAppTemplate, including a .gitignore file and README. You can rename this directory from the Desktop or Terminal, but not in Atom._
-* _A ProjectName subdirectory, including Startup.cs, Program.cs and ProjectName.csproj_
-* _A Controllers subdirectory, including HomeControllers.cs_
-* _A Models subdirectory, including ProjectVariable.cs_
-* _A Views/Home subdirectory, including Input.cshtml and Output.cshtml (names match in HomeControllers.cs)_
+_Program which takes user inputs and inserts them into a preset sentence._
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
-* _$cd MVCWebAppTemplate_
-* _$rm -rf .git to delete my commit history_
-* _$git init to create a new git repository_
-* _$atom . to open all the files in Atom_
-* _(Optional) $atom . and rename each file to your current project name (see note below)_
-* _(Optional) Rename namespaces and class names in the .cs files_
-* _$cd ProjectName (or new name if renamed)_
+* _$cd csharpmadlibs_
 * _$dotnet restore to install packages from the .csproj file_
-* _$dotnet build to run MSBuild_
-* _$dotnet run to check that the program works_
-
-_And you're done! You can commit this to a repository of your choice as your initial commit._
-
-_Note: If you don't rename the files before $dotnet restore / $dotnet build, all the files created will use ProjectName. Renaming after $dotnet restore / $dotnet build is a tedious and error-prone task._
+* _$dotnet run to start the application_
+* _Launch [http://localhost:5000/](http://localhost:5000/) in your browser_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| This program takes user inputs and inserts them into a preset sentence| "A noun" / "dog" | "Mommy gets the dog [...]." |
 
 ## Known Bugs
 
@@ -52,7 +32,7 @@ _Please contact me at marcdaviesriot@gmail.com if you run into any issues or hav
 
 ## Technologies Used
 
-_C#_
+_C#, ASP Net Core, MVC_
 
 ### License
 

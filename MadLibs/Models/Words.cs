@@ -13,7 +13,7 @@ namespace MadLibs.Models
       }
       else
       {
-        return "Water Dog";
+        return "0";
       }
     }
 

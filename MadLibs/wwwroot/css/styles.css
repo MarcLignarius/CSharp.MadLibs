@@ -45,3 +45,7 @@ label {
 .large {
   font-size: 30px;
 }
+
+.card-text {
+  color: black;
+}
